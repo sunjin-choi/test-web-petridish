@@ -3,9 +3,18 @@
 {% if include.select == "professor" %}
   {% assign member_id_group = site.team_members.professor %}
   {% assign member_data_group = site.data.team_members.professor %}
+{% elsif include.select == "postdocs" %}
+  {% assign member_id_group = site.team_members.postdocs %}
+  {% assign member_data_group = site.data.team_members.postdocs %}
 {% elsif include.select == "phd_students" %}
   {% assign member_id_group = site.team_members.phd_students %}
   {% assign member_data_group = site.data.team_members.phd_students %}
+{% elsif include.select == "visitings" %}
+  {% assign member_id_group = site.team_members.visitings %}
+  {% assign member_data_group = site.data.team_members.visitings %}
+{% elsif include.select == "masters_undergrads" %}
+  {% assign member_id_group = site.team_members.masters_undergrads %}
+  {% assign member_data_group = site.data.team_members.masters_undergrads %}
 {% endif %}
 
 {% assign team = "" | split: "" %} <!-- Empty array to start -->

@@ -9,9 +9,15 @@ baseurl: "/isg"                         # Only required if your site is in a dir
 team_members:
   professor:
     - vladimir
+  postdocs:
+    - test1    
   phd_students:
     - test1    
     - test2  
+  visitings:    
+    - test1
+  masters_undergrads:
+    - test1
 
 # SOCIAL PROFILES
 social:

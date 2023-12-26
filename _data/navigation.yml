@@ -9,8 +9,14 @@
   menu: # Dropdown  
   - text: Professor
     href: /team/#professor
+  - text: Post-Docs
+    href: /team/#post-docs
   - text: Ph.D Students  
     href: /team/#phd-students
+  - text: Visiting Scholars
+    href: /team/#visiting-scholars
+  - text: MS & UG Students
+    href: /team/#ms--undergrad-students
 - text: Publications
   href: /publications/
 - text: News    
