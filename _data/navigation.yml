@@ -6,6 +6,9 @@
   href: /research/
 - text: Team
   href: /team/
+  menu: # Dropdown  
+  - text: Students  
+    href: /team/#students
 - text: Publications
   href: /publications/
 - text: News    
