@@ -3,6 +3,12 @@ layout: base
 description: Default template for pages and posts, with contained width.
 ---
 
+{% if page.wide %}
+  {% assign body_class = "col-md-10 col-lg-12 order-lg-first mx-auto" %}
+{% else %}
+  {% assign body_class = "col-md-10 col-lg-8 order-lg-first mx-auto" %}
+{% endif %}
+
 <div class="row">
   {% if page.toc %}
   <div class="col-md-10 col-lg-3 mx-auto">
@@ -17,7 +23,8 @@ description: Default template for pages and posts, with contained width.
     </div>
   </div>
   {% endif %}
-  <div class="col-md-10 col-lg-8 order-lg-first mx-auto">
+  <!--<div class="col-md-10 col-lg-12 order-lg-first mx-auto">-->
+  <div class="{{ body_class }}">
 
     {{ content }}
 

@@ -1,0 +1,15 @@
+---
+description: jekyll-scholar customization
+---
+
+<!--<span id="{{ entry.key }}">-->
+<div class="bib-entry" id="{{ entry.key }}">
+{{ entry.author }} ({{ entry.year }}). 
+<a href="{{ entry.hidden_url }}" class="title">{{ entry.title }}</a>.
+{% if entry.booktitle %}
+<i>{{ entry.booktitle }}</i>. {{ entry.organization }}, {{ entry.year }} 
+{% else %}
+<i>{{ entry.journal }}</i>.
+{% endif %}
+</div>
+<!--</span>-->

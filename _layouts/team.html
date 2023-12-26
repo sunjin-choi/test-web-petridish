@@ -3,13 +3,18 @@ layout: default
 description: Template for team page.
 ---
 
-{% if page.team and site.data[page.team] %}
-  {% assign team = site.data[page.team] %}
-{% elsif site.data.team %}
-  {% assign team = site.data.team %}
+<!--Add Students-->
+<h2 class="text-primary my-4 text-center" style="font-size: 1.5rem;">Students</h2>
+
+{% assign page_student = page.team.student %}
+
+{% if page_student and site.data[page_student] %}
+  {% assign team = site.data[page_student] %}
+{% elsif site.data.team.student %}
+  {% assign team = site.data.team.student %}
 {% endif %}
 
-{{ content }}
+<!--{{ content }}-->
 
 {% for member in team %}
   <div class="d-flex team-member">
