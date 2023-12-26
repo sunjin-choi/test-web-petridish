@@ -5,6 +5,13 @@ baseurl: "/isg"                         # Only required if your site is in a dir
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/markdown/#links
 
+# FONT SETTINGS
+# Add fonts to _includes/head.html. For now,
+# Roboto, Georgia available
+font: 
+  navbar_title: Roboto                  # stylize font for title
+  navbar_item: Georgia                  # stylize font for navigation bar items
+
 # SOCIAL PROFILES
 social:
   email: name@example.com
@@ -40,7 +47,7 @@ colors:
   links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
   banner: "#007bff"                     # Background color for page banners: use color that contrasts well with white
   footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
-font_serif: false # Font type for page content: serif (default) or slightly smaller sans-serif
+font_serif: true # Font type for page content: serif (default) or slightly smaller sans-serif
 rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
 #logo: /assets/theme/images/petri-dish_1f9eb.png # Logo in navbar, will be displayed with 30px height
 
