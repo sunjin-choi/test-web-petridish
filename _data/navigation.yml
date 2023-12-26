@@ -7,8 +7,10 @@
 - text: Team
   href: /team/
   menu: # Dropdown  
-  - text: Students  
-    href: /team/#students
+  - text: Professor
+    href: /team/#professor
+  - text: Ph.D Students  
+    href: /team/#phd-students
 - text: Publications
   href: /publications/
 - text: News    

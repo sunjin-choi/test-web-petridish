@@ -1,20 +1,18 @@
----
-layout: default
-description: Template for team page.
----
+<!--Template for team page-->
 
-{{ content }}
-
-<!--Add Students-->
-<!--<h2 class="text-primary my-4 text-center" style="font-size: 1.5rem;">Students</h2>-->
-
-{% assign page_student = page.team.student %}
-
-{% if page_student and site.data[page_student] %}
-  {% assign team = site.data[page_student] %}
-{% elsif site.data.team.student %}
-  {% assign team = site.data.team.student %}
+{% if include.select == "professor" %}
+  {% assign member_id_group = site.team_members.professor %}
+  {% assign member_data_group = site.data.team_members.professor %}
+{% elsif include.select == "phd_students" %}
+  {% assign member_id_group = site.team_members.phd_students %}
+  {% assign member_data_group = site.data.team_members.phd_students %}
 {% endif %}
+
+{% assign team = "" | split: "" %} <!-- Empty array to start -->
+{% for member_id in member_id_group %}
+  {% assign member = member_data_group[member_id] %}
+  {% assign team = team | push: member %}
+{% endfor %}
 
 {% for member in team %}
   <div class="d-flex team-member">

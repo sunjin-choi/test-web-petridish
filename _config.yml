@@ -5,6 +5,14 @@ baseurl: "/isg"                         # Only required if your site is in a dir
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/markdown/#links
 
+# MEMBER SETTINGS
+team_members:
+  professor:
+    - vladimir
+  phd_students:
+    - test1    
+    - test2  
+
 # SOCIAL PROFILES
 social:
   email: name@example.com
