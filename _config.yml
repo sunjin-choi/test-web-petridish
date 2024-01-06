@@ -4,8 +4,7 @@ author: UCB ISG                         # Used for copyright statement in footer
 baseurl: "/isg"                         # Only required if your site is in a directory e.g. https://username.github.io/sitename
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/markdown/#links
-
-repository: sunjin-choi/test-web-petridish
+repository: sunjin-choi/test-web-petridish # Need this for github actions deployment
 
 # MEMBER SETTINGS
 team_members:
