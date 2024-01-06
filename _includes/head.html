@@ -43,13 +43,13 @@
   {% if description %}
     <meta property="og:description" content="{{ description }}">
   {% endif %}
-  {% if page.background.first %}
-    {% assign background = page.background.img %}
-  {% else %}
-    {% assign background = page.background %}
-  {% endif %}
-  {% if background %}
-    <meta property="og:image" content="{{ background | absolute_url }}">
+  <!--{% if page.background.first %}
+     -  {% assign background = page.background.image %}
+     -{% else %}
+     -  {% assign background = page.background %}
+     -{% endif %}-->
+  {% if page.background.image[0] %}
+    <meta property="og:image" content="{{ page.background.image[0] | absolute_url }}">
   {% endif %}
 
   <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}">
