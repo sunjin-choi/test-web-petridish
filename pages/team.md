@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Team
-description: Who we are
+#description: Who we are
 permalink: /team/
 toc: false # variable defined in _layouts/default.html controlling toc appearance
 wide: false # variable defined in _layouts/default.html controlling page width

@@ -23,12 +23,27 @@
   {% assign team = team | push: member %}
 {% endfor %}
 
+<!--For two columns-->
+<!--<div class="d-flex flex-wrap">
+   -  [> Each team member is 50% width for a 2-column layout <]
+   -  <div class="team-member" style="width: 50%;">
+   -    [> Team member details <]
+   -  </div>
+   -  <div class="team-member" style="width: 50%;">
+   -    [> Team member details <]
+   -  </div>
+   -  [> More team members <]
+   -</div>-->
+
 <div class="team-section">
   {% for member in team %}
     <div class="d-flex team-member">
-      <div class="flex-shrink-0 me-3">
+      <!--<div class="flex-shrink-0 me-3">-->
+      <div class="flex-grow-0 me-3">
         {% if member.image %}
-          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+          <!--<img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid" style="max-width: 80%; width: 300px; height: auto;">-->
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" style="width: 300px; height: auto;">
+          <!--<img src="{{ member.image | relative_url }}" alt="{{ member.name }}">-->
         {% endif %}
       </div>
       <div>
